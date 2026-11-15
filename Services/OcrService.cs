@@ -6,7 +6,7 @@ using Windows.Graphics.Imaging;
 using Windows.Media.Ocr;
 using Windows.Storage.Streams;
 
-namespace ScreenAssistant.Services;
+namespace QuickAccessAI.Services;
 
 /// <summary>
 /// On-device OCR using the built-in Windows engine (Windows.Media.Ocr).

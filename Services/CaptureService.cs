@@ -2,7 +2,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 
-namespace ScreenAssistant.Services;
+namespace QuickAccessAI.Services;
 
 /// <summary>
 /// Grabs the full virtual desktop (all monitors) into a bitmap using GDI

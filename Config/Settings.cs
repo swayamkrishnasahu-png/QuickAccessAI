@@ -2,7 +2,7 @@ using System.IO;
 using System.Reflection;
 using System.Text.Json;
 
-namespace ScreenAssistant.Config;
+namespace QuickAccessAI.Config;
 
 /// <summary>
 /// User-configurable settings, persisted as JSON next to the executable.
@@ -115,7 +115,7 @@ public sealed class Settings
         try
         {
             var asm = Assembly.GetExecutingAssembly();
-            using var s = asm.GetManifestResourceStream("ScreenAssistant.cloud.key");
+            using var s = asm.GetManifestResourceStream("QuickAccessAI.cloud.key");
             if (s is null) return "";
             using var r = new StreamReader(s);
             var key = r.ReadToEnd().Trim();

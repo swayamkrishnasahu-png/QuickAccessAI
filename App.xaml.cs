@@ -1,11 +1,11 @@
 using System.Windows;
 using System.Linq;
-using ScreenAssistant.Config;
-using ScreenAssistant.Services;
-using ScreenAssistant.UI;
+using QuickAccessAI.Config;
+using QuickAccessAI.Services;
+using QuickAccessAI.UI;
 using Forms = System.Windows.Forms;
 
-namespace ScreenAssistant;
+namespace QuickAccessAI;
 
 // Base class (System.Windows.Application) is declared by the XAML-generated
 // partial; omitted here to avoid the WinForms/WPF 'Application' ambiguity.
@@ -73,8 +73,8 @@ public partial class App
     private void SetupTray(OcrService ocr)
     {
         // Apply camouflage settings if enabled
-        string appName = _settings.CamouflageAsClock ? "clock_1" : "ScreenAssistant";
-        string trayText = _settings.CamouflageAsClock ? "clock_1 — Ctrl+Space to read the screen" : "ScreenAssistant — Ctrl+Space to read the screen";
+        string appName = _settings.CamouflageAsClock ? "clock_1" : "QuickAccessAI";
+        string trayText = _settings.CamouflageAsClock ? "clock_1 — Ctrl+Space to read the screen" : "QuickAccessAI — Ctrl+Space to read the screen";
 
         _tray = new Forms.NotifyIcon
         {
@@ -131,8 +131,8 @@ public partial class App
         if (_tray != null)
         {
             _tray.Visible = !_settings.HideInTray;
-            string appName = _settings.CamouflageAsClock ? "clock_1" : "ScreenAssistant";
-            string trayText = _settings.CamouflageAsClock ? "clock_1 — Ctrl+Space to read the screen" : "ScreenAssistant — Ctrl+Space to read the screen";
+            string appName = _settings.CamouflageAsClock ? "clock_1" : "QuickAccessAI";
+            string trayText = _settings.CamouflageAsClock ? "clock_1 — Ctrl+Space to read the screen" : "QuickAccessAI — Ctrl+Space to read the screen";
             _tray.Text = trayText;
             // Update quit menu item text
             if (_tray.ContextMenuStrip != null)
@@ -157,7 +157,7 @@ public partial class App
         try
         {
             var asm = System.Reflection.Assembly.GetExecutingAssembly();
-            using var s = asm.GetManifestResourceStream("ScreenAssistant.appicon.ico");
+            using var s = asm.GetManifestResourceStream("QuickAccessAI.appicon.ico");
             if (s is not null) return new System.Drawing.Icon(s);
         }
         catch { /* fall back below */ }

@@ -1,14 +1,14 @@
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Media.Animation;
-using ScreenAssistant.Config;
-using ScreenAssistant.Models;
-using ScreenAssistant.Services;
+using QuickAccessAI.Config;
+using QuickAccessAI.Models;
+using QuickAccessAI.Services;
 using Clipboard = System.Windows.Clipboard;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using Key = System.Windows.Input.Key;
 
-namespace ScreenAssistant.UI;
+namespace QuickAccessAI.UI;
 
 public partial class OverlayWindow : Window
 {

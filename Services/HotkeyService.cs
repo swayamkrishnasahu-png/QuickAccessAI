@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
 
-namespace ScreenAssistant.Services;
+namespace QuickAccessAI.Services;
 
 /// <summary>
 /// Registers system-wide hotkeys and raises events when they fire.
@@ -24,7 +24,7 @@ public sealed class HotkeyService : IDisposable
 
     public HotkeyService()
     {
-        var parameters = new HwndSourceParameters("ScreenAssistantHotkey")
+        var parameters = new HwndSourceParameters("QuickAccessAIHotkey")
         {
             ParentWindow = HWND_MESSAGE,
             Width = 0,

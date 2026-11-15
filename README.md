@@ -1,15 +1,17 @@
 <div align="center">
 
-# ScreenAssistant
+# QuickAccessAI
 
 **A fast, keyboard-driven desktop assistant that reads what's on your screen and answers questions about it.**
 
 Press a hotkey → it captures the screen → extracts the text with on-device OCR → an LLM streams a concise answer into an always-on-top overlay you drive entirely with the arrow keys.
 
-[![Download](https://img.shields.io/github/v/release/Satyam1616/ScreenAssistant?label=download&color=0078D6)](https://github.com/Satyam1616/ScreenAssistant/releases/latest/download/ScreenAssistant-Setup.exe)
+[![Release](https://img.shields.io/github/v/release/swayamkrishnasahu-png/QuickAccessAI?label=release&color=0078D6)](https://github.com/swayamkrishnasahu-png/QuickAccessAI/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078D6)](#requirements)
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+**Created and maintained by [Swayam Krishna Sahu](https://github.com/swayamkrishnasahu-png).**
 
 </div>
 
@@ -17,11 +19,13 @@ Press a hotkey → it captures the screen → extracts the text with on-device O
 
 ## ⬇️ Download
 
-**[Download ScreenAssistant-Setup.exe →](https://github.com/Satyam1616/ScreenAssistant/releases/latest/download/ScreenAssistant-Setup.exe)**
+See **[Releases](https://github.com/swayamkrishnasahu-png/QuickAccessAI/releases)** for the
+latest `QuickAccessAI-Setup.exe`. If no installer release is available, build from source
+below.
 
-Double-click it. It installs per-user (no admin prompt), adds Start Menu and optional
-desktop shortcuts, and launches a one-time setup screen. **No .NET runtime required** —
-the installer bundles everything.
+The installer runs per-user (no admin prompt), adds Start Menu and optional desktop
+shortcuts, and launches a one-time setup screen. **No .NET runtime required** — the
+installer bundles everything.
 
 > **SmartScreen note:** the installer is unsigned, so Windows may show
 > *"Windows protected your PC → More info → Run anyway."* Removing that prompt requires a
@@ -31,7 +35,7 @@ the installer bundles everything.
 
 ## What it is
 
-ScreenAssistant lets you ask questions about anything on screen without switching windows,
+QuickAccessAI lets you ask questions about anything on screen without switching windows,
 copying text, or touching the mouse. It's built for speed and keyboard flow:
 
 - **Global hotkey** (default **Ctrl+Space**) captures the current screen instantly.
@@ -114,8 +118,8 @@ Requires the [.NET 8 SDK](https://dotnet.microsoft.com/). OCR is built into Wind
 (an appropriate language pack must be present).
 
 ```powershell
-git clone https://github.com/Satyam1616/ScreenAssistant.git
-cd ScreenAssistant
+git clone https://github.com/swayamkrishnasahu-png/QuickAccessAI.git
+cd QuickAccessAI
 dotnet build
 dotnet run
 ```
@@ -125,7 +129,7 @@ in-app setup screen can install it and pull the model for you.
 
 ## Building a shareable installer
 
-To produce the single-file `ScreenAssistant-Setup.exe` yourself (and optionally bake in a
+To produce the single-file `QuickAccessAI-Setup.exe` yourself (and optionally bake in a
 free cloud key so recipients need zero setup), see **[SHARING.md](SHARING.md)**. In short:
 
 ```powershell
@@ -135,7 +139,7 @@ dotnet publish -c Release -r win-x64 --self-contained true `
   -o dist-selfcontained
 
 # Compile the installer (requires Inno Setup: winget install JRSoftware.InnoSetup)
-iscc installer\ScreenAssistant.iss
+iscc installer\QuickAccessAI.iss
 ```
 
 ## Privacy & security
@@ -151,4 +155,4 @@ iscc installer\ScreenAssistant.iss
 
 ## License
 
-[MIT](LICENSE) © 2026 Satyam1616
+[MIT](LICENSE) © 2026 Swayam Krishna Sahu

@@ -3,10 +3,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
-using ScreenAssistant.Config;
-using ScreenAssistant.Models;
+using QuickAccessAI.Config;
+using QuickAccessAI.Models;
 
-namespace ScreenAssistant.Services;
+namespace QuickAccessAI.Services;
 
 /// <summary>
 /// Streams the model's answer token-by-token from one of two backends chosen at

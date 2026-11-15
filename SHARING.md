@@ -1,4 +1,4 @@
-# Sharing ScreenAssistant
+# Sharing QuickAccessAI
 
 This app can answer about your screen in two ways. Each recipient picks one on
 first launch (and can change it later from the tray menu → **Settings…**):
@@ -15,7 +15,7 @@ it.
 
 ## Build a shareable installer
 
-From the project folder (`C:\Users\saroj\ScreenAssistant`):
+From the project folder (`C:\path\to\QuickAccessAI`):
 
 ```powershell
 # 1. Self-contained, single-file build (bundles .NET → no runtime on target)
@@ -26,11 +26,11 @@ dotnet publish -c Release -r win-x64 --self-contained true `
 # 2. Install Inno Setup once (the installer compiler)
 winget install --id JRSoftware.InnoSetup -e
 
-# 3. Compile the installer → installer\ScreenAssistant-Setup.exe
-iscc installer\ScreenAssistant.iss
+# 3. Compile the installer → installer\QuickAccessAI-Setup.exe
+iscc installer\QuickAccessAI.iss
 ```
 
-Send recipients the single **`ScreenAssistant-Setup.exe`**. They double-click it;
+Send recipients the single **`QuickAccessAI-Setup.exe`**. They double-click it;
 it installs to Program Files, adds Start Menu / optional Desktop shortcuts and an
 optional "start with Windows" entry, and launches the setup screen.
 

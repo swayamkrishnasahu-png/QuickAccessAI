@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ScreenAssistant.Models;
+namespace QuickAccessAI.Models;
 
 /// <summary>
 /// One turn in the ongoing conversation. <see cref="Content"/> is what the model

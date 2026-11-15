@@ -9,12 +9,12 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
-using ScreenAssistant.Config;
+using QuickAccessAI.Config;
 using Button = System.Windows.Controls.Button;
 using Brush = System.Windows.Media.Brush;
 using Color = System.Windows.Media.Color;
 
-namespace ScreenAssistant.UI;
+namespace QuickAccessAI.UI;
 
 /// <summary>
 /// First-run (and re-openable) setup screen. Lets the user pick a backend:

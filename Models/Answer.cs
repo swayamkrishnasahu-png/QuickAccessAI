@@ -1,4 +1,4 @@
-namespace ScreenAssistant.Models;
+namespace QuickAccessAI.Models;
 
 /// <summary>
 /// One capture → answer record. History is a list of these; the overlay walks

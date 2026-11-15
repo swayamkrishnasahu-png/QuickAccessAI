@@ -9,8 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>ScreenAssistant</AssemblyName>
-    <RootNamespace>ScreenAssistant</RootNamespace>
+    <AssemblyName>QuickAccessAI</AssemblyName>
+    <RootNamespace>QuickAccessAI</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <!-- Icon for the .exe (shown in Explorer, taskbar, Alt+Tab). -->
     <ApplicationIcon>appicon.ico</ApplicationIcon>

@@ -1,6 +1,6 @@
 using Microsoft.Win32;
 
-namespace ScreenAssistant.Services;
+namespace QuickAccessAI.Services;
 
 /// <summary>
 /// Optional "start with Windows" via the per-user Run key. Fully visible — it
@@ -9,7 +9,7 @@ namespace ScreenAssistant.Services;
 public static class StartupService
 {
     private const string RunKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
-    private const string ValueName = "ScreenAssistant";
+    private const string ValueName = "QuickAccessAI";
 
     private static string? ExePath => Environment.ProcessPath;
 
