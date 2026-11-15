@@ -11,7 +11,7 @@ Press a hotkey → it captures the screen → extracts the text with on-device O
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-**Created and maintained by [Swayam Krishna Sahu](https://github.com/swayamkrishnasahu-png).**
+**Maintained by [Swayam Krishna Sahu](https://github.com/swayamkrishnasahu-png), based on the original [ScreenAssistant](https://github.com/Satyam1616/ScreenAssistant) by Satyam1616.**
 
 </div>
 
@@ -153,6 +153,13 @@ iscc installer\QuickAccessAI.iss
   embed a free-tier key you're willing to rotate. Keep real keys out of source control — the
   tracked `cloud.key` is only a placeholder.
 
+## Attribution
+
+QuickAccessAI is a rebranded and maintained derivative of the original
+[ScreenAssistant](https://github.com/Satyam1616/ScreenAssistant) project by
+[Satyam1616](https://github.com/Satyam1616). The original MIT copyright notice is preserved in
+[LICENSE](LICENSE).
+
 ## License
 
-[MIT](LICENSE) © 2026 Swayam Krishna Sahu
+[MIT](LICENSE) © 2026 Swayam Krishna Sahu. Based on ScreenAssistant by Satyam1616.
